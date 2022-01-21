@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://DragAndDrop/ItemDisplayer/ItemDisplayer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/World.gd" type="Script" id=3]
+[ext_resource path="res://Inventory/Panel.tscn" type="PackedScene" id=4]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Items" type="YSort" parent="."]
+
+[node name="ItemDisplayer" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer2" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer3" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer4" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer5" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer6" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer7" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer8" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer9" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer10" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer11" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer12" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -32, -192 )
+
+[node name="ItemDisplayer13" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( -288, 80 )
+
+[node name="Panel" parent="Items/ItemDisplayer13" instance=ExtResource( 4 )]
+position = Vector2( 0, -72 )
+
+[node name="ItemDisplayer14" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( 344, -72 )
+
+[node name="Panel" parent="Items/ItemDisplayer14" instance=ExtResource( 4 )]
+position = Vector2( 0, -72 )
+
+[node name="ItemDisplayer15" parent="Items" instance=ExtResource( 2 )]
+position = Vector2( 104, 336 )
+
+[node name="Panel" parent="Items/ItemDisplayer15" instance=ExtResource( 4 )]
+position = Vector2( 0, -72 )
+
+[node name="Player" parent="Items" instance=ExtResource( 1 )]
+position = Vector2( 32, -64 )
